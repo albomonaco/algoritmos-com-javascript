@@ -1,11 +1,11 @@
-const precosLivros = [25, 15, 30, 50, 45, 20];
+const livros = require('./listaLivros');
 
 let posicaoMaisBarato = 0;
 
-for (let atual = 0; atual < precosLivros.length; atual++){
-    if (precosLivros[atual] < precosLivros[posicaoMaisBarato]){
+for (let atual = 0; atual < livros.length; atual++){
+    if (livros[atual].preco < livros[posicaoMaisBarato].preco){
         posicaoMaisBarato = atual;
     }
 }
 
-console.log(`o livro mais barato custa ${precosLivros[posicaoMaisBarato]}`);
+console.log(`o livro mais barato custa ${livros[posicaoMaisBarato].preco} e seu título é ${livros[posicaoMaisBarato].titulo}`);
