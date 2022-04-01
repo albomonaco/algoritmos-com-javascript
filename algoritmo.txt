@@ -1,0 +1,1 @@
+Algoritmo: Sequência finita de ações executáveis que visam obter uma solução para um determinado tipo problema.
